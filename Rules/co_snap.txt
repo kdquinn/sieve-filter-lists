@@ -1,0 +1,3 @@
+[{"trigger":{"url-filter":"^[^:]+://+([^:/]+\\.)?snapchat\\.com[/:]","load-type":["third-party"],"unless-domain":["*snapchat.com","*snap.com"]},"action":{"type":"block"}},{"trigger":{"url-filter":"^[^:]+://+([^:/]+\\.)?sc-static\\.net[/:]","load-type":["third-party"],"unless-domain":["*snapchat.com","*snap.com"]},"action":{"type":"block"}},{"trigger":{"url-filter":"^[^:]+://+([^:/]+\\.)?snapkit\\.com[/:]","load-type":["third-party"],"unless-domain":["*snapchat.com","*snap.com"]},"action":{"type":"block"}}]
+[]
+[]

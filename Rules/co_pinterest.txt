@@ -1,0 +1,3 @@
+[{"trigger":{"url-filter":"^[^:]+://+([^:/]+\\.)?pinterest\\.com[/:]","load-type":["third-party"],"unless-domain":["*pinterest.com","*pinterest.ca","*pinterest.co.uk"]},"action":{"type":"block"}},{"trigger":{"url-filter":"^[^:]+://+([^:/]+\\.)?pinimg\\.com[/:]","load-type":["third-party"],"unless-domain":["*pinterest.com","*pinterest.ca","*pinterest.co.uk"]},"action":{"type":"block"}}]
+[]
+[]

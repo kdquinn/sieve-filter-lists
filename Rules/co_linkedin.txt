@@ -1,0 +1,3 @@
+[{"trigger":{"url-filter":"^[^:]+://+([^:/]+\\.)?linkedin\\.com[/:]","load-type":["third-party"],"unless-domain":["*linkedin.com"]},"action":{"type":"block"}},{"trigger":{"url-filter":"^[^:]+://+([^:/]+\\.)?licdn\\.com[/:]","load-type":["third-party"],"unless-domain":["*linkedin.com"]},"action":{"type":"block"}}]
+[]
+[]

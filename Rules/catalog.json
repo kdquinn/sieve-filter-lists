@@ -1,0 +1,684 @@
+{
+ "generated": "2026-11-16T21:22:09Z",
+ "limit": 150000,
+ "blockers": [
+  {
+   "id": "Ads",
+   "name": "Sieve Ads",
+   "detail": "Ad networks and ad elements"
+  },
+  {
+   "id": "Privacy",
+   "name": "Sieve Privacy",
+   "detail": "Trackers, analytics and company blockers"
+  },
+  {
+   "id": "Annoyances",
+   "name": "Sieve Annoyances",
+   "detail": "Cookie banners, pop-ups, widgets"
+  },
+  {
+   "id": "Security",
+   "name": "Sieve Security",
+   "detail": "Malware, phishing, unwanted software, miners"
+  },
+  {
+   "id": "Extras",
+   "name": "Sieve Extras",
+   "detail": "Focus mode, data saver, regional lists, your own rules"
+  }
+ ],
+ "sections": [
+  {
+   "id": "ads",
+   "title": "Ads",
+   "footer": null
+  },
+  {
+   "id": "siteads",
+   "title": "Ads on specific sites",
+   "footer": "Hides ad slots on these sites. Sites change their layouts often, so these work on a best-effort basis. Safari content blockers can't stop YouTube's in-video ads."
+  },
+  {
+   "id": "privacy",
+   "title": "Trackers",
+   "footer": null
+  },
+  {
+   "id": "companies",
+   "title": "Block a company everywhere",
+   "footer": "Blocks that company's scripts, pixels and embeds on every other website. Their own sites keep working."
+  },
+  {
+   "id": "annoy",
+   "title": "Annoyances",
+   "footer": null
+  },
+  {
+   "id": "security",
+   "title": "Security",
+   "footer": null
+  },
+  {
+   "id": "focus",
+   "title": "Focus mode",
+   "footer": "Blocks these websites entirely in Safari."
+  },
+  {
+   "id": "data",
+   "title": "Data saver & speed",
+   "footer": "Aggressive options. Expect some sites to look or work differently."
+  },
+  {
+   "id": "regional",
+   "title": "Regional ad lists",
+   "footer": "Turn on the languages you browse in."
+  }
+ ],
+ "filters": [
+  {
+   "id": "ads_base",
+   "title": "Ad networks & banners",
+   "detail": "The main ad list: blocks ad servers and hides ad slots on most sites, including mobile sites.",
+   "section": "ads",
+   "blocker": "Ads",
+   "icon": "nosign",
+   "defaultOn": true,
+   "rules": 58040,
+   "warning": null,
+   "source": "EasyList",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "ads_video",
+   "title": "Video ad networks",
+   "detail": "Pre-roll and outstream video ad players on news and blog sites.",
+   "section": "ads",
+   "blocker": "Ads",
+   "icon": "play.slash",
+   "defaultOn": false,
+   "rules": 22,
+   "warning": "Can stop some embedded video players from starting.",
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "site_search",
+   "title": "Search engine ads",
+   "detail": "Sponsored results on Google, Bing, DuckDuckGo and Yahoo.",
+   "section": "siteads",
+   "blocker": "Ads",
+   "icon": "magnifyingglass",
+   "defaultOn": true,
+   "rules": 4,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "site_youtube",
+   "title": "YouTube banners & feed ads",
+   "detail": "Promoted videos, banner ads and overlay ads. In-video ads can't be blocked by Safari blockers.",
+   "section": "siteads",
+   "blocker": "Ads",
+   "icon": "play.rectangle",
+   "defaultOn": true,
+   "rules": 1,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "site_reddit",
+   "title": "Reddit promoted posts",
+   "detail": "Hides promoted posts in feeds and comment pages.",
+   "section": "siteads",
+   "blocker": "Ads",
+   "icon": "text.bubble",
+   "defaultOn": true,
+   "rules": 1,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "site_amazon",
+   "title": "Amazon sponsored products",
+   "detail": "Hides “Sponsored” listings in Amazon search results and product pages.",
+   "section": "siteads",
+   "blocker": "Ads",
+   "icon": "cart",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "trk_easyprivacy",
+   "title": "Trackers & analytics",
+   "detail": "Blocks tens of thousands of tracking scripts, pixels and analytics servers.",
+   "section": "privacy",
+   "blocker": "Privacy",
+   "icon": "eye.slash",
+   "defaultOn": true,
+   "rules": 56596,
+   "warning": null,
+   "source": "EasyPrivacy",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "trk_recorders",
+   "title": "Session recorders",
+   "detail": "Scripts that record your clicks, scrolling and typing (Hotjar, FullStory, Clarity and more).",
+   "section": "privacy",
+   "blocker": "Privacy",
+   "icon": "record.circle",
+   "defaultOn": true,
+   "rules": 26,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_meta",
+   "title": "Meta (Facebook, Instagram)",
+   "detail": "Facebook pixel, Like buttons, Instagram embeds on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "person.2.slash",
+   "defaultOn": false,
+   "rules": 11,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_google",
+   "title": "Google",
+   "detail": "Google Analytics, ads, fonts, Maps and YouTube embeds on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "g.circle",
+   "defaultOn": false,
+   "rules": 18,
+   "warning": "Breaks “Sign in with Google”, reCAPTCHA and embedded maps and videos on other sites.",
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_amazon",
+   "title": "Amazon",
+   "detail": "Amazon ads, affiliate widgets and tracking on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "shippingbox",
+   "defaultOn": false,
+   "rules": 6,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_microsoft",
+   "title": "Microsoft ads & analytics",
+   "detail": "Bing ads tracking, Clarity and MSN widgets on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "square.grid.2x2",
+   "defaultOn": false,
+   "rules": 4,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_tiktok",
+   "title": "TikTok / ByteDance",
+   "detail": "TikTok pixel and embeds on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "music.note",
+   "defaultOn": false,
+   "rules": 11,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_x",
+   "title": "X (Twitter)",
+   "detail": "X ads pixel, embedded posts and share buttons on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "xmark.circle",
+   "defaultOn": false,
+   "rules": 5,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_linkedin",
+   "title": "LinkedIn",
+   "detail": "LinkedIn Insight tag and share buttons on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "briefcase",
+   "defaultOn": false,
+   "rules": 2,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_pinterest",
+   "title": "Pinterest",
+   "detail": "Pinterest tag and Pin buttons on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "pin",
+   "defaultOn": false,
+   "rules": 2,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_snap",
+   "title": "Snapchat",
+   "detail": "Snap pixel on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "camera",
+   "defaultOn": false,
+   "rules": 3,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "co_yandex",
+   "title": "Yandex",
+   "detail": "Yandex Metrica and ads on other sites.",
+   "section": "companies",
+   "blocker": "Privacy",
+   "icon": "y.circle",
+   "defaultOn": false,
+   "rules": 5,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "an_cookies",
+   "title": "Cookie consent banners",
+   "detail": "Hides “We use cookies” pop-ups and bars.",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "hand.raised",
+   "defaultOn": true,
+   "rules": 9928,
+   "warning": null,
+   "source": "EasyList Cookie Notices + Sieve",
+   "license": "CC BY-SA 3.0 / Sieve"
+  },
+  {
+   "id": "an_popups",
+   "title": "Newsletter & sign-up pop-ups",
+   "detail": "Subscribe boxes, “before you go” pop-ups and overlays.",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "rectangle.on.rectangle.slash",
+   "defaultOn": true,
+   "rules": 3424,
+   "warning": null,
+   "source": "EasyList Newsletter Notices",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "an_other",
+   "title": "Other annoyances",
+   "detail": "Floating bars, self-promotion and other page clutter.",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "sparkles",
+   "defaultOn": true,
+   "rules": 2516,
+   "warning": null,
+   "source": "EasyList Annoyances",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "an_ai",
+   "title": "AI assistant pop-ups",
+   "detail": "Hides “Ask AI” prompts and AI suggestion boxes that sites add to pages.",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "wand.and.stars",
+   "defaultOn": false,
+   "rules": 156,
+   "warning": null,
+   "source": "EasyList Anti AI Suggestions",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "an_push",
+   "title": "Push-notification prompts",
+   "detail": "“Allow notifications?” services such as OneSignal and PushEngage.",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "bell.slash",
+   "defaultOn": true,
+   "rules": 1072,
+   "warning": null,
+   "source": "Sieve + EasyList Notifications",
+   "license": "Sieve / CC BY-SA 3.0"
+  },
+  {
+   "id": "an_widgets",
+   "title": "Chat & support bubbles",
+   "detail": "Live-chat and feedback widgets in the page corner.",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "bubble.left.and.bubble.right",
+   "defaultOn": false,
+   "rules": 267,
+   "warning": "You won't be able to use a site's live chat.",
+   "source": "EasyList Chat Widgets",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "an_social",
+   "title": "Social share buttons",
+   "detail": "Like, Share and Follow buttons and social widgets.",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "hand.thumbsup",
+   "defaultOn": false,
+   "rules": 3540,
+   "warning": null,
+   "source": "Fanboy's Social Blocking List",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "an_comments",
+   "title": "Comment sections",
+   "detail": "Hides comments under articles (Disqus, OpenWeb, Viafoura and common layouts).",
+   "section": "annoy",
+   "blocker": "Annoyances",
+   "icon": "text.bubble.fill",
+   "defaultOn": false,
+   "rules": 7,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "sec_malware",
+   "title": "Malware sites",
+   "detail": "Sites currently spreading malware, from the abuse.ch URLhaus database.",
+   "section": "security",
+   "blocker": "Security",
+   "icon": "exclamationmark.shield",
+   "defaultOn": true,
+   "rules": 1764,
+   "warning": null,
+   "source": "Online Malicious URL Blocklist (URLhaus)",
+   "license": "CC0 1.0"
+  },
+  {
+   "id": "sec_phishing",
+   "title": "Phishing sites",
+   "detail": "Fake login pages that try to steal passwords, from PhishTank and OpenPhish.",
+   "section": "security",
+   "blocker": "Security",
+   "icon": "fish",
+   "defaultOn": true,
+   "rules": 17950,
+   "warning": null,
+   "source": "Phishing URL Blocklist",
+   "license": "CC0 1.0"
+  },
+  {
+   "id": "sec_miners",
+   "title": "Crypto miners",
+   "detail": "Scripts that use your phone to mine cryptocurrency.",
+   "section": "security",
+   "blocker": "Security",
+   "icon": "bitcoinsign.circle",
+   "defaultOn": true,
+   "rules": 305,
+   "warning": null,
+   "source": "NoCoin list",
+   "license": "MIT"
+  },
+  {
+   "id": "sec_ping",
+   "title": "Hidden click tracking",
+   "detail": "Blocks background “ping” beacons sent when you tap links.",
+   "section": "security",
+   "blocker": "Security",
+   "icon": "dot.radiowaves.left.and.right",
+   "defaultOn": true,
+   "rules": 1,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "sec_popupwindows",
+   "title": "Pop-up windows to other sites",
+   "detail": "Stops pages opening new windows or tabs on another website.",
+   "section": "security",
+   "blocker": "Security",
+   "icon": "macwindow",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": "Can break “Sign in with” and payment pop-ups.",
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "focus_social",
+   "title": "Social media",
+   "detail": "Facebook, Instagram, TikTok, X, Reddit, Snapchat, Threads, Pinterest, Tumblr, Bluesky.",
+   "section": "focus",
+   "blocker": "Extras",
+   "icon": "person.3",
+   "defaultOn": false,
+   "rules": 11,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "focus_video",
+   "title": "Video & streaming",
+   "detail": "YouTube, Netflix, Twitch, Hulu, Disney+, Max, Prime Video and more.",
+   "section": "focus",
+   "blocker": "Extras",
+   "icon": "tv",
+   "defaultOn": false,
+   "rules": 11,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "focus_news",
+   "title": "News sites",
+   "detail": "Major news sites and news aggregators.",
+   "section": "focus",
+   "blocker": "Extras",
+   "icon": "newspaper",
+   "defaultOn": false,
+   "rules": 24,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "focus_shopping",
+   "title": "Shopping",
+   "detail": "Amazon, eBay, Walmart, Target, Etsy, Temu, Shein, AliExpress and more.",
+   "section": "focus",
+   "blocker": "Extras",
+   "icon": "bag",
+   "defaultOn": false,
+   "rules": 21,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "focus_games",
+   "title": "Games",
+   "detail": "Browser game sites and game stores.",
+   "section": "focus",
+   "blocker": "Extras",
+   "icon": "gamecontroller",
+   "defaultOn": false,
+   "rules": 10,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "data_fonts3p",
+   "title": "Web fonts from other sites",
+   "detail": "Skips downloading Google Fonts, Typekit and other hosted fonts.",
+   "section": "data",
+   "blocker": "Extras",
+   "icon": "textformat",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "data_fonts",
+   "title": "All web fonts",
+   "detail": "Uses your phone's built-in fonts everywhere.",
+   "section": "data",
+   "blocker": "Extras",
+   "icon": "textformat.alt",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": "Icons on some sites turn into empty boxes.",
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "data_scripts3p",
+   "title": "Scripts from other sites",
+   "detail": "Only lets a site run its own JavaScript. Very fast and private.",
+   "section": "data",
+   "blocker": "Extras",
+   "icon": "chevron.left.forwardslash.chevron.right",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": "Expert mode: many sites will break. Add them to Allowed Sites.",
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "data_frames3p",
+   "title": "Embedded frames from other sites",
+   "detail": "Blocks embedded videos, maps, widgets and many ads.",
+   "section": "data",
+   "blocker": "Extras",
+   "icon": "rectangle.dashed",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": "Breaks embedded videos and some checkout pages.",
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "data_media",
+   "title": "Video & audio",
+   "detail": "Stops videos and audio loading on web pages.",
+   "section": "data",
+   "blocker": "Extras",
+   "icon": "speaker.slash",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "data_images",
+   "title": "All images",
+   "detail": "Text-only browsing for slow connections.",
+   "section": "data",
+   "blocker": "Extras",
+   "icon": "photo",
+   "defaultOn": false,
+   "rules": 1,
+   "warning": null,
+   "source": "Sieve",
+   "license": "Sieve"
+  },
+  {
+   "id": "reg_de",
+   "title": "German",
+   "detail": "Ads on German-language sites.",
+   "section": "regional",
+   "blocker": "Extras",
+   "icon": "globe",
+   "defaultOn": false,
+   "rules": 3833,
+   "warning": null,
+   "source": "EasyList Germany",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "id": "reg_ru",
+   "title": "Russian & Ukrainian",
+   "detail": "Ads on Russian- and Ukrainian-language sites.",
+   "section": "regional",
+   "blocker": "Extras",
+   "icon": "globe",
+   "defaultOn": false,
+   "rules": 20737,
+   "warning": null,
+   "source": "RU AdList",
+   "license": "CC BY 3.0"
+  }
+ ],
+ "credits": [
+  {
+   "name": "EasyList, EasyPrivacy & EasyList annoyance lists",
+   "license": "CC BY-SA 3.0",
+   "url": "https://easylist.to/pages/licence.html"
+  },
+  {
+   "name": "Fanboy's Social Blocking List",
+   "license": "CC BY-SA 3.0",
+   "url": "https://easylist.to/pages/licence.html"
+  },
+  {
+   "name": "EasyList Germany",
+   "license": "CC BY-SA 3.0",
+   "url": "https://easylist.to/pages/licence.html"
+  },
+  {
+   "name": "RU AdList",
+   "license": "CC BY 3.0",
+   "url": "https://github.com/easylist/ruadlist"
+  },
+  {
+   "name": "malware-filter (URLhaus, Phishing, PUP)",
+   "license": "CC0 1.0",
+   "url": "https://gitlab.com/malware-filter/malware-filter"
+  },
+  {
+   "name": "NoCoin adblock list",
+   "license": "MIT",
+   "url": "https://github.com/hoshsadiq/adblock-nocoin-list"
+  }
+ ]
+}

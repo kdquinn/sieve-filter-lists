@@ -1,0 +1,3 @@
+[{"trigger":{"url-filter":".*","resource-type":["popup"],"load-type":["third-party"]},"action":{"type":"block"}}]
+[]
+[]
